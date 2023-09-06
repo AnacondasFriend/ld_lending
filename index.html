@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ландшафтный дизайн г. Волгоград</h1>
+        <div class="burger"><img src="icons/list.svg" alt="свернуть"></div>        
+        <nav>
+            <ul>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#calculate">Калькулятор стоимости</a></li>
+                <li><a href="#sendForm">Оставить заявку</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div style="clear:both"></div>
+    </header>
+    <main>
+        <div class="main">
+            <div>
+                <h1>Ландшафтный дизайн Волгоград</h1>
+                <p>Здравствуйте! Меня зовут Мария и я ландшафтный дизайнер. Предлагаю Вам качественные услуги по разработке и 
+                    созданию уникальных ландшафтных оформлений для вашего сада, двора или дома. Своим клиентам я помогаю создать
+                    теплые и уютные зеленые уголки, наполненные великолепными растениями, которые превратят пространство
+                    в идеальное место для жизни, отдыха и работы. Звоните или запишитесь на консультацию ниже, а также заполняйт анкету заказчика.
+                </p>
+            </div>
+        </div>
+        <div class="services" id="services">
+            <div class="service">
+                <div class="service-list">
+                    <ul>
+                        <li>Архитерктурная планировка</li>
+                        <li>Зонирование</li>
+                        <li>Планировка освещения</li>
+                        <li>Создание уютного и функционального пространства</li>
+                        <li>Проектирование дорожно-тропиночной сети</li>
+                    </ul>
+                </div>
+                <div class="imgSlider">
+                    <img src="images/dist/design1.webp" alt="ландшафтный дизайн">
+                </div>
+            </div>
+            <div class="service">
+                <div class="imgSlider">
+                    <img src="images/dist/design2.webp" alt="ландшафтный дизайн">
+                </div>
+                <div class="service-list">
+                    <ul>
+                        <li>Создание малоуходного сада</li>
+                        <li>Подбор растений</li>
+                        <li>Анализ климатических условий</li>
+                        <li>Рекомендации по уходу</li>
+                        <li>Проектирование цветников</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-list">
+                    <ul>
+                        <li>Визуализация</li>
+                        <li>Скетчинг</li>
+                        <li>Фотореалистичные виды Вашего будущего сада</li>
+                        <li>Видео</li>
+                    </ul>
+                </div>
+                <div class="imgSlider">
+                    <img src="images/dist/design3.webp" alt="ландшафтный дизайн">
+                </div>
+            </div>
+        </div>
+        <div id="calculate">
+            <h2>Расчитайте стоимость вашего ландшафтного проекта</h2>
+            <div class="checks">
+                <div>
+                    <input name="options" type="radio" id="fullproject">
+                    <label for="fullproject">Полный проект участка</label>
+                </div>
+                <div>
+                    <input name="options" type="radio" id="withoutGreenPlan">
+                    <label for="withoutGreenPlan">Планировка с уклоном на архитектурно-планировочное зонирование</label>
+                </div>
+                <div>
+                    <input name="options" type="radio" id="greenPlan">
+                    <label for="greenPlan">Планировка с уклоном на озеленение</label>
+                </div>
+                <div>
+                    <input name="options" type="radio" id="flowerGarden">
+                    <label for="flowerGarden">Только цветники</label>
+                </div>
+                <div>
+                    <input name="options" type="radio" id="eskiz">
+                    <label for="eskiz">Эскиз</label>
+                </div>
+                <br>
+                <div>
+                    <label for="area">Размеры участка<input type="text" id="area" placeholder="Площадь вашего участка">в м2                         
+                    </label>
+               
+                </div>
+                <br>
+                <input type="button" class='calcPrice btn-style1'value="Расчитать">
+            </div>
+            <div class="res">
+                <h2>Цена за проект: <div class="resCalc"></div></h2>
+                <p class="btn price">Подробнее о прайсе</p>
+            </div>
+        </div>
+        <div id="sendForm">
+            <h2>Вы можете оставить заявку и я Вам перезвоню или Вы можете сразу заполнить анкету со всеми Вашими пожеланиями</h2>
+            <div>
+                <input type="button" class="btn littleForm" value="Оставить заявку">
+                <input type="button" class="btn bigForm" value="Заполнить анкету">
+            </div>    
+        </div>
+    </main>
+    <footer id="contacts">
+        <p>Контакты:
+            <br>
+            номер телефона +7987654321
+            <br>
+            почта: qwerty@qwerty.ru
+            <br>
+            социальные сети:
+        </p>
+        <a href="https://www.freepik.com/free-ai-image/park-outdoor-manicured-lawn-flowerbed-ai-generated-image_43065303.htm#fromView=search&term=landscape+design&page=1&position=2">Image By WangXiNa</a>
+    </footer>
+    <div class="popup price">
+        <div class="closePopup"><img src="icons/x-lg.svg" alt="закрыть"></div>
+        <div class="priceList">
+            <p><h1>Полный пакет ландшафтного дизайна включая следующие планировки и чертежи:</h1>
+                <ul>
+                    <li>Генеральный план</li>
+                    <li>План мощения</li>
+                    <li>Дендроплан и планы цветников</li>
+                    <li>План освещения и план полива</li>
+                    <li>Разбивочный чертеж</li>
+                </ul>
+                Цена: 500р/сотка
+                Минимальная стоимость проекта 5000р.
+            </p>
+            <p><h1>Планировка благоустройства участка:</h1>
+                <ul>
+                    <li>Генеральный план</li>
+                    <li>План мощения</li>
+                    <li>План освещения и план полива</li>
+                    <li>Разбивочный чертеж</li>
+                </ul>
+                Цена: 400р/сотка
+                Минимальная стоимость проекта 2500р.
+            </p>
+            <p><h1>Планировка озеленения участка:</h1>
+                <ul>
+                    <li>Дендроплан</li>
+                    <li>Планы Цветников</li>
+                    <li>Ассортиметная ведомость и рекомендации по уходу</li>
+                    <li>Разбивочный чертеж</li>
+                </ul>
+                Цена: 400р/сотка
+                Минимальная стоимость проекта 2500р.
+            </p>
+            <p><h1>Цветники</h1>
+                Цена: 250р/м2
+            </p>
+            <p><h1>Эскиз и консультация</h1>
+                Цена: 2000р.
+            </p>
+        </div>
+    </div>
+    <div class="popup littleForm">
+        <div class="closePopup"><img src="icons/x-lg.svg" alt="закрыть"></div>
+        <form action="">
+            <h1>Оставьте свои контактные данные и я Вам перезвоню</h1>
+            <label>Как к Вам обращаться  <input type="text" name='name' placeholder="Имя"></label>
+            <br>
+            <label>Ваш номер <input type="text" name='phonenumber' placeholder="Номер телефона"></label>
+            <br>
+            <label>Почта по которой с Вами можно связаться   <input type="text"  name='email' placeholder="Почта"></label>
+            <input class="sendLittleForm btn-style1" type="submit" value="отправить">
+        </form>
+    </div>
+    <div class="popup bigForm">
+        <div class="closePopup"><img src="icons/x-lg.svg" alt="закрыть"></div>
+        <div class="anketa">
+            <h1>Анкета для составления технического задания к проекту ландшафтного благоустройства частной усадьбы</h1>
+            <form action="">
+                <h2>Общая информация</h2>
+                <label >Заказчик(ФИО)<input name='fio' type="text"></label>
+                <label>Адрес клиента<input name='client-adress' type="text"></label>
+                <label>Адрес участка(кадастровый номер)<input name='place-adress' type="text"></label>
+                <label>Телефон<input name='phonenumber' type="text"></label>
+                <label>Почта<input name='email' type="text"></label>
+                <div>
+                    <h3>Выделить нужное</h3>
+                    <label><input name='architecturaConsultacia' type="checkbox">Консультацию в сфере ландшафтного благоустройства с уклоном на архитектурно-планировочное зонирование</label>
+                    <label><input name='landscapeConsultacia' type="checkbox">Консультацию в сфере ландшафтного благоустройства с уклоном на ботанический аспект</label>
+                    <label><input name='bothConsultacia' type="checkbox">Комлексный проект благоустройства</label>
+                </div>
+                <label>Данные об объекте, возраст дома(приблизительно), наличие усадебные построек и каких<input name='houseDescription' type="text"></label>
+                <h2>Дополнительные сведения о заказчике</h2>
+                <label>Число проживающих на участке<input name='numOfPeople' type="text"></label>
+                <label>Возраст клиента<input type="text" name='clientAge'></label>
+                <label>Дети и их возраст<input type="text" name='clientsKids'></label>
+                <label>Домашние животные<input type="text" name='clientsPets'></label>
+                <label>Обсуживающий персонал(есть/нет, плинируется/не планируется)<input type="text" name='staff'></label>
+                <div>
+                    <h3>Маломобильные пользователи</h3>
+                    <label><input type="checkbox" name='noPwithLimMob'>Есть</label>
+                    <label><input type="checkbox" name='noPwithLimMob'>Нет</label>
+                    <label><input type="checkbox" name='needPandus'>Требуется предусмотреть пандусы</label>
+                </div>
+                <div>
+                    <h3>Наличие алергических реакций</h3>
+                    <label><input type="checkbox" name='noAllergies'>Нет</label>
+                    <label><input type="checkbox" name='birchAllergia'>Береза</label>   
+                    <label><input type="checkbox" name='poplarAllergia'>Тополь</label>  
+                    <label><input type="checkbox" name='herbsAllergia'>Цветение трав</label>
+                    <label><input type="checkbox" name='otherAllergia'>Другое <input type="text"></label>                  
+                </div>
+                <div>
+                    <h2>Какие функциональные зоны вы хотите организовать?</h2>
+                    <div>
+                        <h3>Отдых/досуг</h3>
+                        <label><input type="checkbox" name='lawnArea'>Газон для активных игр</label>
+                        <label><input type="checkbox" name='fireArea'>Зона открытого огня</label>   
+                        <label><input type="checkbox" name='hearthArea'>Переносной очаг</label>  
+                        <label><input type="checkbox" name='waterArea'>Декоративный водный объект</label>
+                        <label><input type="checkbox" name='sunroomArea'>Солярий</label>      
+                        <label><input type="checkbox" name='poolArea'>Бассейн</label>
+                        <label><input type="checkbox" name='alcoveArea'>Беседка</label>   
+                        <label><input type="checkbox" name='terraceArea'>Терраса</label>  
+                        <label><input type="checkbox" name='summerhouseArea'>Летний домик</label>
+                        <label><input type="checkbox" name='playgroundArea'>Детская площадка</label>
+                        <label><input type="checkbox" name='swingArea'>Качель</label>    
+                        <label><input type="checkbox" name='otherArea'>Другое <input type="text"></label>                 
+                    </div>
+                    <div>
+                        <h3>Хобби</h3>
+                        <label><input type="checkbox" name='cookingHobby'>Кулинария</label>
+                        <label><input type="checkbox" name='boardgamesHobby'>Настольные игры</label>   
+                        <label><input type="checkbox" name='badmintonHobby'>Бадминтон</label>  
+                        <label><input type="checkbox" name='beekeepingHobby'>Пчеловодство</label>
+                        <label><input type="checkbox" name='dogbreedingHobby'>Собаководство</label>      
+                        <label><input type="checkbox" name='woodworkHobby'>Работа по дереву</label>               
+                    </div>
+                    <div>
+                        <h3>Хозяйственный блок</h3>
+                        <label><input type="checkbox" name='garageHousehold'>Гараж</label>
+                        <label><input type="checkbox" name='parkingHousehold'>Парковка</label>   
+                        <label><input type="checkbox" name='gardenHousehold'>Зона огорода</label>  
+                        <label><input type="checkbox" name='greenhouseHousehold'>Теплица</label>
+                        <label><input type="checkbox" name='cellarHousehold'>Погреб для хранения овощей</label>      
+                        <label><input type="checkbox" name='compostHousehold'>Компост</label>  
+                        <label><input type="checkbox" name='houseHousehold'>Хозяйственный домик</label>
+                        <label><input type="checkbox" name='garbagebinsHousehold'>Мусорные баки</label>   
+                        <label><input type="checkbox" name='toiletHousehold'>Туалет</label>  
+                        <label><input type="checkbox" name='workshopHousehold'>Мастерская</label>
+                        <label><input type="checkbox" name='ptherHousehold'>Другое <input type="text"></label>             
+                    </div>
+                    <div>
+                        <h3>Развлечения/обеды на открытом воздухе</h3>
+                        <label><input type="checkbox">Нет</label>
+                        <label><input type="checkbox">Да(как часто?) <input type="text"></label>             
+                    </div>
+                </div>
+                <div>
+                    <h2>Коммуникации</h2>
+                    <div>
+                        <h3>Система полива</h3>
+                        <label><input type="checkbox">Нет, не нужна</label>
+                        <label><input type="checkbox">Да, автоматический полив</label> 
+                        <label><input type="checkbox">Да, механический полив</label>             
+                    </div>
+                    <div>
+                        <h3>Расположение водопровода и точки подключения к системе водоснабжения</h3>
+                        <label><input type="checkbox">Бочка с водой</label>
+                        <label><input type="checkbox">Централизированное водоснабжение</label> 
+                        <label><input type="checkbox">Собственная скважина</label>   
+                        <label><input type="checkbox">Участок прилегает к естественному водоему</label>  
+                        <label><input type="checkbox">Воды нет</label> 
+                        <label><input type="checkbox">Дополнительные требования <input type="text"></label>           
+                    </div>
+                    <div>
+                        <h3>Система освещения</h3>
+                        <label><input type="checkbox">Дежурное освещение</label>
+                        <label><input type="checkbox">Декоративное освещение(подсветка растений, деревьев, низкие фонари, направленный свет)</label> 
+                        <label><input type="checkbox">Внешняя подсветка фасадов строений усадьбы</label>           
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Эти элементы позволят сделать ваш сад особенным, отметьте все что вы хотели бы видеть</h3>
+                        <label><input type="checkbox">Зеленый лабиринт</label>
+                        <label><input type="checkbox">Арки/перголы</label> 
+                        <label><input type="checkbox">Пряно-арматические травы</label>   
+                        <label><input type="checkbox">Ягодные кустарники(виды)<input type="text"></label>  
+                        <label><input type="checkbox">Фруктовые деревья(виды)<input type="text"></label> 
+                        <label><input type="checkbox">Вы коллекционер и хотели бы собрать в саду коллекцию из <input type="text"></label> 
+                    </div>
+                    <div>
+                        <h3>Какой стиль предпочитаете?</h3>
+                        <label><input type="checkbox">Классика/регулярный</label>
+                        <label><input type="checkbox">Классика/пейзажный</label> 
+                        <label><input type="checkbox">Прованс/деревенский</label> 
+                        <label><input type="checkbox">Технологический/хайтек</label>
+                        <label><input type="checkbox">Минималистический</label> 
+                        <label><input type="checkbox">Скандинавский</label> 
+                        <label><input type="checkbox">Натургарден/луг</label>
+                    </div>
+                    <div>
+                        <h3>Строительные материалы</h3>
+                        <label><input type="checkbox">Террасная доска</label>
+                        <label><input type="checkbox">Натуральный камень</label> 
+                        <label><input type="checkbox">Тротуарная плитка</label> 
+                        <label><input type="checkbox">Бетонное покрытие</label>
+                        <label><input type="checkbox">Деревянные материалы</label> 
+                        <label><input type="checkbox">Металл/ковка</label> 
+                        <label><input type="checkbox">Резиновые покрытия</label>
+                        <label><input type="checkbox">Щебеночные покрытия</label> 
+                        <label><input type="checkbox">Другое<input type="text"></label>
+                    </div>
+                    <div>
+                        <h3>Какие объекты можно/нужно убрать/демонтировать</h3>
+                        <label><input type="checkbox">Строения<input type="text"></label>
+                        <label><input type="checkbox">Растения<input type="text"></label>
+                    </div>
+                    <div>
+                        <h3>Хотите ли вы изменить</h3>
+                        <label><input type="checkbox">Ограждение/забор</label>
+                        <label><input type="checkbox">Декорировать стены</label> 
+                        <label><input type="checkbox">Мощение</label> 
+                        <label><input type="checkbox">Освещение</label>
+                        <label><input type="checkbox">Систему полива</label> 
+                    </div>
+                </div>
+                <div>
+                    <h2>Растения</h2>
+                    <div>
+                        <h3>Пик декоративности</h3>
+                        <label><input type="checkbox">Осенне-цветущие</label>
+                        <label><input type="checkbox">Весенне-цветущие</label> 
+                        <label><input type="checkbox">Летне-цветущие</label> 
+                        <label><input type="checkbox">Непрерывного цветения</label>                    
+                    </div>
+                    <div>
+                        <h3>Ваши предпочтения</h3>
+                        <label><input type="checkbox">Ароматные</label>
+                        <label><input type="checkbox">Привлекающие белок/бурундуков</label> 
+                        <label><input type="checkbox">Укажите растения которые вам нравятся<input type="text"></label> 
+                        <label><input type="checkbox">Укажите растения которые вам не нравятся<input type="text"></label>
+                        <label><input type="checkbox">Какие цвета вам нравятся<input type="text"></label> 
+                        <label><input type="checkbox">Какие цвета вам не нравятся<input type="text"></label>
+                        <label><input type="checkbox">Есть ли в комнатах, выходящих в сад цветовые оттенки, которые вы бы хотели повторить в саду, укажите какие<input type="text"></label> 
+                    </div>
+                    <div>
+                        <h3>Обслуживание сада</h3>
+                        <label><input type="checkbox">Каков ваш опыт работы в саду и насколько она вам интересна?<input type="text"></label>
+                        <label><input type="checkbox">Сколько часов вы тратите на работу в саду в настоящее время?<input type="text"></label> 
+                        <label><input type="checkbox">Какие садовые работы вам нравятся<input type="text"></label> 
+                        <label><input type="checkbox">Какие садовые работы вам не нравятся<input type="text"></label>
+                        <label><input type="checkbox">Что не позволяет вам выполнять работы определенного типа?<input type="text"></label> 
+                        <label><input type="checkbox">Что мешает вам наслаждаться садом?(недостаток уединенности, много шума, ...)<input type="text"></label>
+                    </div>
+                </div>
+                <div>
+                    <h2>Дополнительная информация о территории которую необходимо учесть при проектировании</h2>
+                        <label><input type="checkbox">Есть переувлажненные участки<input type="text"></label>
+                        <label><input type="checkbox">Есть пересушенные участки<input type="text"></label> 
+                        <label><input type="checkbox">Есть ветренные зоны<input type="text"></label> 
+                        <label><input type="checkbox">Дурнопахнущие участки<input type="text"></label>
+                        <label><input type="checkbox">Другое<input type="text"></label> 
+                </div>
+                <input class="sendBigForm btn-style1" type="submit" value="отправить">
+            </form>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
