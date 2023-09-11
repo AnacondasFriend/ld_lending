@@ -13,6 +13,12 @@ const bigForm = document.querySelector('.popup.bigForm');
 const textPattern = /^/;
 const telPattern = /^/;
 const emailPattern = /^/;
+const request = new XMLHttpRequest();
+const urlLittleForm = "php/littleForm.php";
+let params;
+request.open("POST", urlLittleForm, true);
+request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
 
 function calculatePrice(serviceType, area){
     if(serviceType=='fullproject'){
@@ -49,14 +55,23 @@ function showNavigation(){
 }
 
 function checkLittleForm(){
-    clientName = littleForm.querySelector("input[type='text']");
-    clientNum = littleForm.querySelector("input[type='tel']");
-    clientMail = littleForm.querySelector("input[type='email']");
+    params = '';
+    clientName = littleForm.querySelector("input[type='text']").value;
+    clientNum = littleForm.querySelector("input[type='tel']").value;
+    clientMail = littleForm.querySelector("input[type='email']").value;
+    
+    params = "&name=" + clientName+ "&phonenumber=" + clientNum + "&email="+clientMail;
+    return true;
 }
 function checkBigForm(){
+    params = '';
     textInputs = littleForm.querySelectorAll("input[type='text']");
     clientNum = littleForm.querySelector("input[type='tel']");
     clientMail = littleForm.querySelector("input[type='email']");
+    for(let input of textInputs){
+        params += `&${input.getAtribute('name')}=`+ `${input.value}`
+    }
+    return true;
 }
 
 function showMessage(){
@@ -95,14 +110,20 @@ burger.addEventListener('click', showNavigation);
 sendLittleForm.addEventListener('click', (e)=>{
     e.preventDefault();
     if(checkLittleForm()){
-        littleForm.querySelector('form').submit;
-        showMessage();  
+        request.send(params);
     } 
 })
 sendBigForm.addEventListener('click', (e)=>{
     e.preventDefault();
     if(checkBigForm()){
-        bigForm.querySelector('form').submit;
-        showMessage();  
+        request.send(params); 
     } 
 })
+
+request.addEventListener("readystatechange", () => {
+
+    if(request.readyState === 4 && request.status === 200) {       
+		console.log(request.responseText);
+        showMessage();
+    }
+});
